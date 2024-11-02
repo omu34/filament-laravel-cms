@@ -59,7 +59,7 @@ class ApplicationResource extends Resource
                     ->label('Agent'),
                 TextColumn::make('status')
                     ->badge()
-                    ->color(fn (string $state): string => match ($state) {
+                    ->color(fn(string $state): string => match ($state) {
                         'pending' => 'warning',
                         'approved' => 'success',
                         'denied' => 'danger',
@@ -135,12 +135,12 @@ class ApplicationResource extends Resource
                                     TextEntry::make('dealer.company_name')
                                         ->label('Dealer'),
                                     TextEntry::make('agent.user.full_name')
-                                        ->label('Agent'),
+                                        ->label(label: 'Agent'),
                                     TextEntry::make('amount')
                                         ->money('KES'),
                                     TextEntry::make('status')
                                         ->badge()
-                                        ->color(fn (string $state): string => match ($state) {
+                                        ->color(fn(string $state): string => match ($state) {
                                             'pending' => 'warning',
                                             'approved' => 'success',
                                             'denied' => 'danger',

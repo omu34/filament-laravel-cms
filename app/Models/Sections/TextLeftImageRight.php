@@ -10,7 +10,7 @@ class TextLeftImageRight extends Model
 {
     use HasFactory;
 
-    protected $table = 'text_left_image_right';
+    protected $table = 'text_left_image_rights';
 
     protected $fillable = [
         'title',

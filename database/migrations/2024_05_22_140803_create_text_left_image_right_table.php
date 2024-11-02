@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('text_left_image_right', function (Blueprint $table) {
+        Schema::create('text_left_image_rights', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->text('description');

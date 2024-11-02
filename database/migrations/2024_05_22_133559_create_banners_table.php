@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->string('image');
+            $table->string('image')->nullable();
+            $table->string('button_url')->nullable();
+            $table->string('button_text')->nullable();
             $table->foreignId('page_section_id')->constrained();
             $table->timestamps();
         });

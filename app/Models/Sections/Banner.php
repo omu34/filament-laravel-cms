@@ -14,6 +14,8 @@ class Banner extends Model
         'title',
         'description',
         'image',
+        'button_url',
+        'button_text',
         'page_section_id',
     ];
 
