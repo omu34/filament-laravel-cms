@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class AboutUsSectionResource extends Resource
 {
     protected static ?string $model = AboutUsSection::class;
+    protected static ?string $navigationGroup = 'Section';
 
     protected static ?string $navigationIcon = 'heroicon-c-clipboard-document-list';
 
@@ -38,6 +39,7 @@ class AboutUsSectionResource extends Resource
                     ->label('Button Url'),
                 Forms\Components\FileUpload::make('image')
                     ->image()
+                    ->columnSpan('full')
                     ->label('Image')
                     ->required(),
                 Forms\Components\TextInput::make('button_text')
@@ -66,6 +68,10 @@ class AboutUsSectionResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->label('Image'),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->dateTime(),
+                Tables\Columns\TextColumn::make('updated_at')
+                    ->dateTime(),
 
             ])
             ->filters([

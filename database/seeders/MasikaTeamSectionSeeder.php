@@ -17,14 +17,11 @@ class MasikaTeamSectionSeeder extends Seeder
             'title' => 'Masika And Koross ',
             'description' => '
             Our team of skilled attorneys is dedicated to providing
-                            exceptional legal representation. With years of experience and a
+            exceptional legal representation. With years of experience and a
                             commitment to excellence, we are committed to achieving the best
                             possible outcomes for our clients
-                    ',
-
-            // 'button_text' => 'learn more',
-            // 'button_url' => 'about',
-            'image' => 'https://mmsadvocates.co.ke/wp-content/uploads/2023/05/Our-Team-4.jpg',
+                            ',
+            // 'image' => 'https://mmsadvocates.co.ke/wp-content/uploads/2023/05/Our-Team-4.jpg',
             'page_section_id' => 2,
         ]);
     }

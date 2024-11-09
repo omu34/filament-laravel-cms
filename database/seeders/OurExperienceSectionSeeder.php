@@ -16,8 +16,9 @@ class OurExperienceSectionSeeder extends Seeder
         OurExperienceSection::create(
             [
                 'title' => 'Our Proven',
-                'description' => 'Our proven experience pushes to top of Law handling',
-                'page_section_id' => 4
+                'description' => 'Our proven expertise allows us to provide effective and efficient
+                    legal solutions to your specific needs.',
+                'page_section_id' => 3
             ]
         );
     }

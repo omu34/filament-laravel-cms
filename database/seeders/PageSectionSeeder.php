@@ -24,18 +24,36 @@ class PageSectionSeeder extends Seeder
             ['page_id' => 1, 'section_id' => 7, 'order' => 7,],
             ['page_id' => 1, 'section_id' => 8, 'order' => 8,],
 
-            // Loan App Page
+            // About Us
             ['page_id' => 2, 'section_id' => 1, 'order' => 1,],
-            ['page_id' => 2, 'section_id' => 2, 'order' => 1,],
-            ['page_id' => 2, 'section_id' => 8, 'order' => 2,],
+            ['page_id' => 2, 'section_id' => 7, 'order' => 2,],
+            ['page_id' => 2, 'section_id' => 2, 'order' => 3,],
+            ['page_id' => 2, 'section_id' => 8, 'order' => 4,],
 
-            // FAQs Page
+            // Contact Us
             ['page_id' => 3, 'section_id' => 1, 'order' => 1,],
-            ['page_id' => 3, 'section_id' => 7, 'order' => 2,],
+            ['page_id' => 3, 'section_id' => 6, 'order' => 2,],
+            ['page_id' => 3, 'section_id' => 4, 'order' => 3,],
+            ['page_id' => 3, 'section_id' => 8, 'order' => 4,],
+            // Areas of Practice
+            ['page_id' => 5, 'section_id' => 1, 'order' => 1,],
+            ['page_id' => 5, 'section_id' => 3, 'order' => 2,],
+            ['page_id' => 5, 'section_id' => 8, 'order' => 3,],
+            // ['page_id' => 4, 'section_id' => 4, 'order' => 4,],
+            // Legal Speak
+            ['page_id' => 4, 'section_id' => 1, 'order' => 1,],
+            ['page_id' => 4, 'section_id' => 6, 'order' => 2,],
+            ['page_id' => 4, 'section_id' => 4, 'order' => 4,],
+            ['page_id' => 4, 'section_id' => 8, 'order' => 3,],
+
+
+            // // FAQs Page
+            // ['page_id' => 6, 'section_id' => 1, 'order' => 1,],
+            // ['page_id' => 6, 'section_id' => 7, 'order' => 2,],
 
             // Terms and Conditions Page
-            ['page_id' => 4, 'section_id' => 1, 'order' => 1,],
-            ['page_id' => 4, 'section_id' => 9, 'order' => 2,],
+            // ['page_id' => 4, 'section_id' => 1, 'order' => 1,],
+            // ['page_id' => 4, 'section_id' => 9, 'order' => 2,],
         ];
 
         foreach ($pageSections as $pageSection) {

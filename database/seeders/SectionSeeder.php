@@ -46,14 +46,14 @@ class SectionSeeder extends Seeder
             ['Featured Articles', FeaturedArticlesSection::class, 'placeholder.png'],
 
             // ['Banner', Banner::class, 'placeholder.png'],
-            // ['Centered CTA Text', CenteredCtaText::class, 'placeholder.png'],
+            ['Centered CTA Text', CenteredCtaText::class, 'placeholder.png'],
             // ['Text Right Image Left', TextRightImageLeft::class, 'placeholder.png'],
             // ['Text Left Image Right', TextLeftImageRight::class, 'placeholder.png'],
             // ['Loan Calculator', LoanCalculator::class, 'placeholder.png'],
             // ['Recommended Products', RecommendedProduct::class, 'placeholder.png'],
             // ['FAQs Content', FaqsContent::class, 'placeholder.png'],
             // ['Loan App Form', LoanAppForm::class, 'placeholder.png'],
-            ['Terms & Conditions', TermsContent::class, 'placeholder.png'],
+            // ['Terms & Conditions', TermsContent::class, 'placeholder.png'],
         ];
 
         foreach ($sections as $section) {

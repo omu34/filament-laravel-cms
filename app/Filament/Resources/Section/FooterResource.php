@@ -30,15 +30,15 @@ class FooterResource extends Resource
                 Forms\Components\RichEditor::make('description')
                     ->required()
                     ->columnSpan('full')
-                    ->label('Description'),  
+                    ->label('Description'),
                 Forms\Components\TextInput::make('phone_title')
                     ->maxLength(255)
                     ->required()
-                    ->label('Phone Title'),      
+                    ->label('Phone Title'),
                 Forms\Components\TextInput::make('phone')
                     ->tel()
                     ->required()
-                    ->label('Phone Number'), 
+                    ->label('Phone Number'),
             ]);
     }
 
@@ -59,7 +59,11 @@ class FooterResource extends Resource
                 Tables\Columns\TextColumn::make('phone')
                     ->searchable()
                     ->sortable()
-                    ->label('Phone Number'),          
+                    ->label('Phone Number'),
+            Tables\Columns\TextColumn::make('created_at')
+                ->dateTime(),
+            Tables\Columns\TextColumn::make('updated_at')
+                ->dateTime(),
             ])
             ->filters([
                 //

@@ -17,22 +17,26 @@ class SocialsSeeder extends Seeder
             [
                 'title' => 'Facebook',
                 'icon' => 'images/fb.svg',
-                'url' => 'https://www.facebook.com/coopbankenya/',
+                'url' => 'https://www.facebook.com/',
+                // coopbankenya/
             ],
             [
                 'title' => 'Instagram',
                 'icon' => 'images/ig.svg',
-                'url' => 'https://www.instagram.com/coopbankenya/?hl=en',
+                'url' => 'https://www.instagram.com/',
+                // coopbankenya/?hl=en
             ],
             [
                 'title' => 'LinkedIn',
                 'icon' => 'images/ln.svg',
-                'url' => 'https://www.linkedin.com/company/62404/',
+                'url' => 'https://www.linkedin.com/company/',
+                // 62404/
             ],
             [
                 'title' => 'YouTube',
                 'icon' => 'images/yt.svg',
-                'url' => 'https://www.youtube.com/co-opbankkenya',
+                'url' => 'https://www.youtube.com/',
+                // co - opbankkenya
             ],
             [
                 'title' => 'WhatsApp',
@@ -42,17 +46,20 @@ class SocialsSeeder extends Seeder
             [
                 'title' => 'X',
                 'icon' => 'images/x.svg',
-                'url' => 'https://twitter.com/Coopbankenya',
+                'url' => 'https://twitter.com/',
+                // Coopbankenya
             ],
             [
                 'title' => 'TikTok',
                 'icon' => 'images/tk.svg',
-                'url' => 'https://www.tiktok.com/@coopbankenya',
+                'url' => 'https://www.tiktok.com/',
+                // @coopbankenya
             ],
             [
                 'title' => 'Flickr',
                 'icon' => 'images/fk.svg',
-                'url' => 'https://www.flickr.com/photos/147086508@N03',
+                'url' => 'https://www.flickr.com/',
+                // photos/147086508@N03
             ],
         ];
 

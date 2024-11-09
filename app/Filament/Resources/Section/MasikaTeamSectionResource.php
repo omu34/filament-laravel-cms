@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class MasikaTeamSectionResource extends Resource
 {
     protected static ?string $model = MasikaTeamSection::class;
+    protected static ?string $navigationGroup = 'Section';
 
     protected static ?string $navigationIcon = 'heroicon-s-bars-3';
 
@@ -46,6 +47,10 @@ class MasikaTeamSectionResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->label('Description'),
+            Tables\Columns\TextColumn::make('created_at')
+                ->dateTime(),
+            Tables\Columns\TextColumn::make('updated_at')
+                ->dateTime(),
             ])
             ->filters([
                 //

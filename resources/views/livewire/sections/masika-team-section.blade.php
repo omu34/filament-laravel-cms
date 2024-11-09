@@ -1,5 +1,5 @@
 <!-- Masika & Koross Team -->
-<div data-aos="fade-up" class="z-20 sticky top-0 mb-1 mt-1 h-screen-1/2" data-aos-duration="1000">
+<div data-aos="fade-up" class="z-10 sticky top-0 mb-1 mt-1 h-screen-1/2" data-aos-duration="1000">
     <div style="background-color: rgb(247, 252, 255)"
         class="overflow-x-hidden z-20 sticky top-0 mb-1 h-screen-1/8 flex flex-col items-center justify-center bg-purple-100">
 
@@ -12,7 +12,7 @@
                         <span class="text-indigo-900">Team</span>
                     </h1>
 
-                    <p class="mt-3 max-w-2xl text-left text-sm sm:text-md md:text-md text-black sm:mt-4">
+                    <p class="text-md mt-2 text-sm md:w-1/2 w-full text-gray-900 md:text-base font-poppins-b">
                        {!!$sectiondata->description!!}
 
                     </p>
@@ -47,7 +47,7 @@
                         <div
                             class="flex-none w-40 sm:w-48 snap-center bg-gray-200 rounded-lg shadow-md p-5 my-6 text-center transition-transform duration-500 transform ease-in-out hover:scale-110">
                             <img :src="card.image" alt="Team Member 1" class="w-full h-auto rounded-full mb-4" />
-                            <h3 class="text-md sm:text-xl font-semibold mb-2" x-text="card.title"></h3>
+                            <h3 class="text-md sm:text-xl font-semibold mb-2 text-black" x-text="card.title"></h3>
                             <p class="text-red-900 text-sm font-medium" x-text="card.description"></p>
                             <a :href="card.link">
                                 <img src="images/email.png" class="rounded-full h-8 border-2 hover:border-red-600"

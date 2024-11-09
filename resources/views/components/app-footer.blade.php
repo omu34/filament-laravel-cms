@@ -1,11 +1,11 @@
 <footer class="mt-auto">
     <div class="bg-red-900">
         <!-- Start of footer socials section -->
-        <div class="py-8  mx-auto max-w-7xl">
+        <div class="py-8 lg:py-2  mx-auto max-w-7xl">
             <div
                 class="grid justify-items-start grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-x-10 gap-y-10 lg:gap-y-0 px-8 mx-auto">
                 @foreach ($socials as $social)
-                    <a href="{{ $social->url }}">
+                    <a href="{{ $social->url }}" >
                         <div class="flex justify-center items-center gap-x-2">
                             <img src="{{ asset($social->icon) }}" alt="{{ $social->title }}">
                             <span class="text-sm font-bold text-white">
@@ -123,8 +123,8 @@
                             @foreach ($footer->children as $link)
                                 <ul class="list-none ml-0">
                                     @if ($link->url != null)
-                                        <a href="{{ $link->url }}">
-                                            <li class="text-white mb-4">
+                                        <a href="{{ $link->url }}" class="hover ">
+                                            <li class="text-white mb-4 hover:border-white hover:text-red-400">
                                                 {{ $link->title }}
                                             </li>
                                         </a>

@@ -3,17 +3,26 @@
 namespace App\Livewire\Sections;
 
 use Livewire\Component;
-use App\Models\Content\OurExperience;
+use App\Models\Sections\OurExperienceSection as Title;
+use App\Models\Content\OurExperiencesContent;
 
 class OurExperienceSection extends Component
 {
-    public $experiences;
-    public $sectiondata;
+
+    public $experiences, $sectiondata;
+
 
     public function mount()
     {
-        $this->experiences = OurExperience::all();
+        $this->fetchExperiences();
     }
+
+    public function fetchExperiences()
+    {
+        $this->sectiondata = Title::latest()->first();
+        $this->experiences = OurExperiencesContent::latest()->take(8)->first();
+    }
+
 
     public function render()
     {

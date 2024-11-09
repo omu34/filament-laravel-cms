@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('button_text');
             $table->string('bottom');
-
+            $table->string('email');
             $table->foreignId('page_section_id')->nullable()->constrained();
 
             $table->timestamps();

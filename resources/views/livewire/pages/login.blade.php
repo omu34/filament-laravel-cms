@@ -32,34 +32,34 @@ new #[Layout('layouts.app')] class extends Component
     <div x-data="{ loginModalOpen: false }" @open-modal.window="loginModalOpen = true">
         <div x-data="{}" x-ref="search" x-show="loginModalOpen" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div class="flex min-h-full items-center justify-center p-4 text-center">
-                <div x-cloak @click="loginModalOpen = false" x-show="loginModalOpen" 
+                <div x-cloak @click="loginModalOpen = false" x-show="loginModalOpen"
                     x-transition:enter="transition ease-out duration-300 transform"
-                    x-transition:enter-start="opacity-0" 
+                    x-transition:enter-start="opacity-0"
                     x-transition:enter-end="opacity-100"
                     x-transition:leave="transition ease-in duration-200 transform"
-                    x-transition:leave-start="opacity-100" 
+                    x-transition:leave-start="opacity-100"
                     x-transition:leave-end="opacity-0"
                     class="fixed inset-0 transition-opacity bg-black bg-opacity-40" aria-hidden="true">
                 </div>
 
                 <div class="relative bg-white border-solid border-2 border-brand-green rounded-lg mx-auto max-w-3xl pt-4 pb-10 px-4" x-data="{}" x-cloak x-show="loginModalOpen"
                 x-transition:enter="transition ease-out duration-300 transform"
-                x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" 
+                x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
                 x-transition:leave="transition ease-in duration-200 transform"
-                x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" 
+                x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                 x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
                     <div class="flex items-center space-x-4 justify-end">
                         <button type="button" @click="loginModalOpen = false" class="hover:opacity-80">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.55558 15.9998C3.55558 9.14409 9.14427 3.55539 16 3.55539C22.8558 3.55539 28.4445 9.14409 28.4445 15.9998C28.4445 22.8556 22.8558 28.4443 16 28.4443C9.14427 28.4443 3.55558 22.8556 3.55558 15.9998ZM19.7734 21.6621C20.2497 21.6621 20.7331 21.4839 21.1086 21.1084C21.8424 20.3746 21.8424 19.1718 21.1086 18.438L18.6704 15.9998L21.1086 13.5617C21.8424 12.8279 21.8424 11.6251 21.1086 10.8913C20.3748 10.1575 19.1719 10.1575 18.4381 10.8913L16 13.3294L13.5619 10.8913C12.8281 10.1575 11.6253 10.1575 10.8915 10.8913C10.1577 11.6251 10.1577 12.8279 10.8915 13.5617L13.3296 15.9998L10.8915 18.438C10.1577 19.1718 10.1577 20.3746 10.8915 21.1084C11.267 21.4839 11.7503 21.6621 12.2267 21.6621C12.703 21.6621 13.1864 21.4839 13.5619 21.1084L16 18.6702L18.4381 21.1084C18.8136 21.4839 19.297 21.6621 19.7734 21.6621Z" fill="#CA4B3D" stroke="#CA4B3D" stroke-width="1.77778"/>
-                            </svg>                                
+                            </svg>
                         </button>
                     </div>
                     <div class="w-full flex flex-col justify-start items-start gap-4 px-6 mt-2">
                         <div class="w-full flex justify-start items-start">
                             <div class="grid gap-4 justify-items-start">
-                                <h5 class="text-brand-green">Login to Track Application</h5>
+                                <h5 class="text-brand-green">Track Applications</h5>
                                 <form wire:submit="login" class="w-full grid gap-y-4">
                                     <div class="grid grid-cols-1 gap-2 custom-select">
                                         <label class="text-left" for="email">
@@ -101,7 +101,7 @@ new #[Layout('layouts.app')] class extends Component
                                                 <span class="text-brand-green text-sm">Forgot Password?</span>
                                             </a>
                                         @endif
-                                    </div>    
+                                    </div>
                                     <a href="/application" class="w-full flex items-center justify-center px-4 py-2 text-sm rounded-lg bg-white border-brand-green hover:border-brand-light-green hover:bg-brand-light-green text-brand-dark-green border-2 shadow-md">
                                         <button type="button" class="text-sm">
                                             Sign Up
@@ -113,8 +113,8 @@ new #[Layout('layouts.app')] class extends Component
                                             <path id="Vector_2" d="M8.55501 12.21C8.41251 12.21 8.27001 12.1575 8.15751 12.045C7.94001 11.8275 7.94001 11.4675 8.15751 11.25L10.4075 9L8.15751 6.75C7.94001 6.5325 7.94001 6.1725 8.15751 5.955C8.37501 5.7375 8.73501 5.7375 8.95251 5.955L11.6 8.6025C11.8175 8.82 11.8175 9.18 11.6 9.3975L8.95251 12.045C8.84001 12.1575 8.69751 12.21 8.55501 12.21Z" fill="#FFFFFF"/>
                                             </g>
                                             </g>
-                                        </svg>                                                           
-                                    </a> 
+                                        </svg>
+                                    </a>
                                 </form>
                             </div>
                         </div>

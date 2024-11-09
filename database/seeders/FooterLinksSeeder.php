@@ -15,7 +15,7 @@ class FooterLinksSeeder extends Seeder
     {
         $links = [
             [
-                'title' => 'Banking',
+                'title' => 'Legal Practice',
             ],
             [
                 'title' => 'User Account',
@@ -38,7 +38,7 @@ class FooterLinksSeeder extends Seeder
                 'parent_id' => 1,
             ],
             [
-                'title' => 'Other Sites',
+                'title' => 'Area of Practice',
             ],
             [
                 'title' => 'Lorem ipsum',
@@ -61,7 +61,7 @@ class FooterLinksSeeder extends Seeder
                 'parent_id' => 6,
             ],
             [
-                'title' => 'Links',
+                'title' => 'Legal Focus',
             ],
             [
                 'title' => 'Terms & Conditions',
@@ -84,7 +84,7 @@ class FooterLinksSeeder extends Seeder
                 'parent_id' => 11,
             ],
             [
-                'title' => 'Contact',
+                'title' => 'External Links',
             ],
             [
                 'title' => 'Lorem ipsum',

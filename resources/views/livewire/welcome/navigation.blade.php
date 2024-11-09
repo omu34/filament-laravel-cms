@@ -1,5 +1,6 @@
 <!-- Start of header -->
 <header class="bg-gray-300 fixed z-20 inset-x-0">
+
     <nav class="mx-auto flex lg:max-w-7xl items-center justify-between p-4 lg:px-6">
         <div class="flex items-center gap-x-6">
             <a href="/">
@@ -32,10 +33,115 @@
                             @endforeach
                         </div>
                     @endif
+                    {{-- <div x-data="{
+        navigationMenuOpen: false,
+        navigationMenu: '',
+        navigationMenuCloseDelay: 200,
+        navigationMenuCloseTimeout: null,
+        navigationMenuLeave() {
+            let that = this;
+            this.navigationMenuCloseTimeout = setTimeout(() => {
+                that.navigationMenuClose();
+            }, this.navigationMenuCloseDelay);
+        },
+        navigationMenuReposition(navElement) {
+            this.navigationMenuClearCloseTimeout();
+            this.$refs.navigationDropdown.style.left = navElement.offsetLeft + 'px';
+            this.$refs.navigationDropdown.style.marginLeft = (navElement.offsetWidth / 2) + 'px';
+        },
+        navigationMenuClearCloseTimeout() {
+            clearTimeout(this.navigationMenuCloseTimeout);
+        },
+        navigationMenuClose() {
+            this.navigationMenuOpen = false;
+            this.navigationMenu = '';
+        }
+    }"
+        class="fixed md:top-1 left-0 right-0  w-full  mx-auto rounded-lg  h-16  border-b border-gray-200">
+
+        <div class="relative w-full flex items-center justify-center px-4 py-2">
+            <ul
+                class="flex items-center justify-center p-1 space-x-1 list-none md:mt-    rounded-md text-red-800 group ">
+
+
+                <li>
+                    <button
+                        :class="{ 'bg-neutral-100': navigationMenu=='learn-more', 'hover:bg-neutral-100': navigationMenu!='learn-more' }"
+                        @mouseover="navigationMenuOpen=true; navigationMenuReposition($el); navigationMenu='learn-more'"
+                        @mouseleave="navigationMenuLeave()"
+                        class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md hover:text-neutral-900 focus:outline-none disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-neutral-100 group w-max">
+                        <span class="text-md md:text-lg">Learn More</span>
+                        <svg :class="{ '-rotate-180': navigationMenuOpen == true && navigationMenu == 'learn-more' }"
+                            class="relative top-[1px] ml-1 h-3 w-3 ease-out duration-300"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+        <div x-ref="navigationDropdown" x-show="navigationMenuOpen"
+            x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100"
+            x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90"
+            @mouseover="navigationMenuClearCloseTimeout()" @mouseleave="navigationMenuLeave()"
+            class="absolute top-0 pt-3 duration-200 ease-out -translate-x-1/2 translate-y-11" x-cloak>
+
+            <div
+                class="flex justify-center w-auto h-auto overflow-hidden bg-white border rounded-md shadow-sm border-neutral-200/70">
+                <div x-show="navigationMenu == 'learn-more'" class="flex items-stretch justify-center w-full p-6">
+                    <div class="w-72">
+                        <a href="#_" @click="navigationMenuClose()"
+                            class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                            <span class="group">
+                                <button
+                                    class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-red-900 rounded hover:bg-pink-800 md:hover:bg-transparent  '
+                                    href='' onclick="scrollToSection('section5')">Partners</button>
+                                <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+                            </span>
+                            <span class="block font-light leading-5 opacity-50">This how our partners say about our
+                                general help to the community.</span>
+                        </a>
+                        <a href="#_" @click="navigationMenuClose()"
+                            class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                            <span class="group">
+                                <button
+                                    class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-red-900 rounded hover:bg-pink-800 md:hover:bg-transparent  '
+                                    href='' onclick="scrollToSection('section3')">Resources</button>
+                                <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+                            </span>
+                            <span class="block font-light leading-5 opacity-50">TSfN resources include advocacy
+                                tools, psychosocial support for caregivers, educational materials,
+
+                                recreational activities, access to affordable therapies and assistive
+                                devices.</span>
+                        </a>
+
+                    </div>
+                    <div class="w-72">
+                        <a href="#_" @click="navigationMenuClose()"
+                            class="block px-3.5 py-3 text-sm rounded hover:bg-neutral-100">
+                            <span class="group">
+                                <button
+                                    class='block py-2 px-3 md:text-2xl text-lg  md:font-bold font-medium text-red-900 rounded hover:bg-pink-800 md:hover:bg-transparent  '
+                                    href='' onclick="scrollToSection('section7')">Gallery</button>
+                                <div class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"></div>
+                            </span>
+                            <span class="block font-light leading-5 opacity-50">A framework without the complex
+                                setup or
+                                heavy dependencies.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> --}}
 
                     @if (auth()->user()->type == 'customer')
-                        <a href="/start-application">
-                            <p class="text-red-800 text-sm">Start Application</p>
+                        <a href="/start">
+                            <p class="text-red-800 text-sm">Start</p>
                         </a>
                     @endif
                 </div>

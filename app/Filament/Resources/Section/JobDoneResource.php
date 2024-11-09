@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class JobDoneResource extends Resource
 {
     protected static ?string $model = JobDone::class;
+    protected static ?string $navigationGroup = 'Section';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -71,6 +72,10 @@ class JobDoneResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->label('Jobs Done'),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->dateTime(),
+                Tables\Columns\TextColumn::make('updated_at')
+                    ->dateTime(),
             ])
             ->filters([
                 //

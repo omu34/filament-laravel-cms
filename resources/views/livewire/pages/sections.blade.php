@@ -21,12 +21,12 @@
 
 
     {{-- @elseif($section->id == 9)
-        <livewire:sections.terms-content :sectiondata="$sectiondata" />
-    @elseif($section->id == 10)
+        <livewire:sections.terms-content :sectiondata="$sectiondata" />--}}
+    @elseif($section->id == 9)
         <livewire:sections.centered-cta-text :sectiondata="$sectiondata" />
-    @elseif($section->id == 11)
-        <livewire:sections.text-right-image-left :sectiondata="$sectiondata" />
-    @elseif($section->id == 12)
+    {{-- @elseif($section->id == 10)
+        <livewire:sections.procurement-section :sectiondata="$sectiondata" /> --}}
+    {{--@elseif($section->id == 12)
         <livewire:sections.text-left-image-right :sectiondata="$sectiondata" />
     @elseif($section->id == 13)
         <livewire:sections.home-loan-calc :sectiondata="$sectiondata" />
@@ -36,6 +36,7 @@
         <livewire:sections.faqs-content :sectiondata="$sectiondata" :section="$section" />
     @elseif($section->id == 16)
         <livewire:sections.loan-app-form :sectiondata="$sectiondata" />
+
     @elseif($section->id == 17)
         <livewire:sections.terms-content :sectiondata="$sectiondata" /> --}}
     @endif

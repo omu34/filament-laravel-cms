@@ -11,12 +11,15 @@ class NewsLetterSection extends Model
 
     use HasFactory;
 
+    protected $table = 'news_letter_sections';
+
     protected $fillable = [
 
         'title',
         'description',
         'button_text',
         'bottom',
+        'email',
         'page_section_id',
     ];
 

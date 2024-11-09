@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Section\JobDoneResource\Pages;
 
 use App\Filament\Resources\Section\JobDoneResource;
+use App\Models\Sections\JobDone;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 

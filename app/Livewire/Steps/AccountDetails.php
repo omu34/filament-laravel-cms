@@ -3,11 +3,11 @@
 namespace App\Livewire\Steps;
 
 use Livewire\Component;
-use App\Models\Loans\Dealer;
+use App\Models\Applications\Dealer;
 use Livewire\Attributes\Url;
-use App\Models\Loans\Customer;
+use App\Models\Applications\Customer;
 use App\Models\Settings\Branch;
-use App\Models\Loans\Application;
+use App\Models\Applications\Application;
 
 class AccountDetails extends Component
 {

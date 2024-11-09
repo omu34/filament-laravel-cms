@@ -14,7 +14,7 @@ class MasikaTeamSection extends Model
         'description',
         // 'button_url',
         // 'button_text',
-        'image',
+        // 'image',
         'page_section_id',
     ];
     public function pageSection()

@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class OurExperienceSectionResource extends Resource
 {
     protected static ?string $model = OurExperienceSection::class;
+    protected static ?string $navigationGroup = 'Section';
 
     protected static ?string $navigationIcon = 'heroicon-m-cube';
 
@@ -46,6 +47,10 @@ class OurExperienceSectionResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->label('Description'),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->dateTime(),
+                Tables\Columns\TextColumn::make('updated_at')
+                    ->dateTime(),
             ])
             ->filters([
                 //

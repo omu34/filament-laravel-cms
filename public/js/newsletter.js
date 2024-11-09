@@ -1,12 +1,13 @@
 let button = document.getElementById("change-button");
 let colors = [
+    'emerald',
     "red",
     "blue",
     "green",
     "yellow",
     "pink",
     "purple",
-    "gray",
+    "slate",
 ]; //Add more colors from tailwind design pallete as per requirement
 
 function changeColor() {

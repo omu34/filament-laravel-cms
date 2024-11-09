@@ -13,7 +13,8 @@
             <div x-cloak>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
                     @foreach ($products as $product)
-                        <a href="#" class="h-full"> 
+                        <a href="#" class="h-full">
+
                             <div class="flex flex-col justify-start items-start border-solid border-2 border-brand-green bg-brand-tlg-ten rounded-lg gap-4 p-10 h-full">
                                 <div class="flex justify-center items-center">
                                     <img src="{{ asset($product->icon) }}" alt="asset icon">

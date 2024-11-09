@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Sections\JobDone;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -43,21 +42,18 @@ class DatabaseSeeder extends Seeder
             InsuranceCompanySeeder::class,
             ApplicationSeeder::class,
             ExtraIncomeSeeder::class,
-            // AboutUsContentSeeder::class,
-            // LegalSpeakContentSeeder::class,
-            FeaturedArticlesSectionSeeder::class,
-            // AreasOfPracticeSeeder::class,
-            // ContactUsSeeder::class,
-            // AboutUsSeeder::class,
-            MasikaTeamSectionSeeder::class,
-            JobDoneSeeder::class,
-            NewsLetterSectionSeeder::class,
-            ContactUsSectionSeeder::class,
+            MessagesSeeder::class,
+            SubscriptionSeeder::class,
             AboutUsSectionSeeder::class,
             OurExperienceSectionSeeder::class,
-            OurExperienceSeeder::class,
-            // ContactUsContentSeeder::class,
-            // AreasOfPracticeContentSeeder::class,
+            OurExperiencesContentSeeder::class,
+            NewsLetterSectionSeeder::class,
+            JobDoneSeeder::class,
+            ContactUsSectionSeeder::class,
+            MasikaTeamSectionSeeder::class,
+            MasikaTeamContentSeeder::class,
+            FeaturedArticlesSectionSeeder::class,
+
         ]);
     }
 }

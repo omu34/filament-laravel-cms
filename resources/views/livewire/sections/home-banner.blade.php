@@ -1,4 +1,4 @@
-<section>
+{{-- <section>
     <div class="pt-16 swiper mySwiperSlides">
         <div class="swiper-wrapper">
             <div class="swiper-slide relative w-full h-[300px] sm:h-[400px] lg:h-[450px] bg-cover bg-top" style="background-image: url('images/home-banner-min-webp.webp');">
@@ -41,4 +41,4 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
-</section>
+</section> --}}

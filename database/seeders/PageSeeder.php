@@ -24,79 +24,105 @@ class PageSeeder extends Seeder
             'thumbnail' => 'placeholder.png',
         ]);
 
-        Page::create([
-            // 'display_name' => 'Start Application',
-            'name' => 'Start Application', // TODO: Change to 'Application'
-            'slug' => 'application',
-            'order' => 2,
-            'in_top_nav' => true,
-            'description' => 'This is the application page.',
-            'keywords' => 'application, page, description',
-            'meta' => 'This is the application page.',
-            'thumbnail' => 'placeholder.png',
-        ]);
+        // Page::create([
+        //     'name' => 'Start',
+        //     'slug' => 'homepage',
+        //     'order' => 2,
+        //     'in_top_nav' => false,
+        //     'description' => 'This is the home page.',
+        //     'keywords' => 'home, page, description',
+        //     'meta' => 'This is the home page.',
+        //     'thumbnail' => 'placeholder.png',
+        // ]);
 
-        Page::create([
-            'name' => 'FAQs',
-            'slug' => 'faqs',
-            'order' => 3,
-            'in_top_nav' => true,
-            'description' => 'This is the faqs page.',
-            'keywords' => 'faqs, page, description',
-            'meta' => 'This is the faqs page.',
-            'thumbnail' => 'placeholder.png',
-        ]);
+        // Page::create([
+        //     // 'display_name' => 'Start App',
+        //     'name' => 'Start Application', // TODO: Change to 'Application'
+        //     'slug' => 'application',
+        //     'order' => 2,
+        //     'in_top_nav' => true,
+        //     'description' => 'This is the application page.',
+        //     'keywords' => 'application, page, description',
+        //     'meta' => 'This is the application page.',
+        //     'thumbnail' => 'placeholder.png',
+        // ]);
 
-        Page::create([
-            'name' => 'Terms & Conditions',
-            'slug' => 'terms',
-            'order' => 4,
-            'in_top_nav' => true,
-            'description' => 'This is the terms page.',
-            'keywords' => 'terms, page, description',
-            'meta' => 'This is the terms page.',
-            'thumbnail' => 'placeholder.png',
-        ]);
+        // Page::create([
+        //     'name' => 'FAQs',
+        //     'slug' => 'faqs',
+        //     'order' => 3,
+        //     'in_top_nav' => true,
+        //     'description' => 'This is the faqs page.',
+        //     'keywords' => 'faqs, page, description',
+        //     'meta' => 'This is the faqs page.',
+        //     'thumbnail' => 'placeholder.png',
+        // ]);
 
-        Page::create([
-            'name' => 'Areas Of Practice',
-            'slug' => 'area-of-practice',
-            'order' => 5,
-            'in_top_nav' => true,
-            'description' => 'This is the area of practice page.',
-            'keywords' => 'area of practice, page, description',
-            'meta' => 'This is the area of practice page.',
-            'thumbnail' => 'placeholder.png',
-        ]);
+        // Page::create([
+        //     'name' => 'Terms & Conditions',
+        //     'slug' => 'terms',
+        //     'order' => 4,
+        //     'in_top_nav' => true,
+        //     'description' => 'This is the terms page.',
+        //     'keywords' => 'terms, page, description',
+        //     'meta' => 'This is the terms page.',
+        //     'thumbnail' => 'placeholder.png',
+        // ]);
+
+
         Page::create([
             'name' => 'About Us',
             'slug' => 'about-us',
-            'order' => 6,
+            'order' => 2,
             'in_top_nav' => true,
             'description' => 'This is the about us page.',
             'keywords' => 'about us, page, description',
             'meta' => 'This is the about us page.',
             'thumbnail' => 'placeholder.png',
         ]);
-        Page::create([
-            'name' => 'Legal Speak',
-            'slug' => 'legal-speak',
-            'order' => 7,
-            'in_top_nav' => true,
-            'description' => 'This is the legal speak page.',
-            'keywords' => 'legal speak, page, description',
-            'meta' => 'This is the legal speak page.',
-            'thumbnail' => 'placeholder.png',
-        ]);
+
         Page::create([
             'name' => 'Contact Us',
             'slug' => 'contact-us',
-            'order' => 8,
+            'order' => 3,
             'in_top_nav' => true,
             'description' => 'This is the contact us page.',
             'keywords' => 'contact us, page, description',
             'meta' => 'This is the contact us page.',
             'thumbnail' => 'placeholder.png',
         ]);
+
+        Page::create([
+            'name' => 'Legal Speak',
+            'slug' => 'legal-speak',
+            'order' => 4,
+            'in_top_nav' => true,
+            'description' => 'This is the legal speak page.',
+            'keywords' => 'legal speak, page, description',
+            'meta' => 'This is the legal speak page.',
+            'thumbnail' => 'placeholder.png',
+        ]);
+
+        Page::create([
+            'name' => 'Area of Practice',
+            'slug' => 'area-of-practice',
+            'order' => 5,
+            'in_top_nav' => true,
+            'description' => 'This is the contact us page.',
+            'keywords' => 'contact us, page, description',
+            'meta' => 'This is the contact us page.',
+            'thumbnail' => 'placeholder.png',
+        ]);
+
+        // Page::create([
+        //     'name' => 'procurement',
+        //     'slug' => 'procurement',
+        //     // 'order' => 6,
+        //     'in_top_nav' => true,
+        //     'description' => 'This is the contact us page.',
+        //     'keywords' => 'contact us, page, description',
+        //     'meta' => 'This is the contact us page.',
+        //     'thumbnail' => 'placeholder.png',
+        // ]);
     }
 }

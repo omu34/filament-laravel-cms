@@ -9,7 +9,7 @@ use App\Models\Pages\PageSection;
 class JobDone extends Model
 {
     use HasFactory;
-    protected $table = 'job_dones';
+    protected $table = 'jobs_done';
     protected $fillable = [
         'main_title',
         'subtitle1',

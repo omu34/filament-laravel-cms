@@ -3,7 +3,7 @@
 namespace App\Livewire\Sections;
 
 use Livewire\Component;
-use App\Models\Loans\Dealer;
+use App\Models\Applications\Dealer;
 
 class DealerSectionOne extends Component
 {
@@ -12,7 +12,6 @@ class DealerSectionOne extends Component
     public function mount() // Add this method
     {
         $this->dealer = Dealer::where('user_id', auth()->id())->first();
-
     }
 
     public function render()

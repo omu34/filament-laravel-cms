@@ -52,6 +52,10 @@ class BannerResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->label('Banner Description'),
+            Tables\Columns\TextColumn::make('created_at')
+                ->dateTime(),
+            Tables\Columns\TextColumn::make('updated_at')
+                ->dateTime(),
             ])
             ->filters([
                 //

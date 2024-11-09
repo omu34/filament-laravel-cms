@@ -1,6 +1,8 @@
 <section class="bg-brand-tlg-five w-full flex justify-center pt-8 pb-12">
     <div>
-        @if ($terms != null)  
+        @if ($terms != null)
+
+
             <div class="flex flex-col max-w-4xl gap-y-3 md:gap-y-6">
                 @foreach ($terms as $term)
                     <div class="mt-4" data-aos="fade-up" data-aos-duration="1000">

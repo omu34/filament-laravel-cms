@@ -1,8 +1,11 @@
 <!-- Contact us -->
 
-<div data-aos="fade-up" data-aos-duration="1000" >
-    <section class="bg-slate-800">
+<div data-aos="fade-up" data-aos-duration="1000">
+    <section class="bg-white mb-1">
         <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-8">
+            @if (session()->has('message'))
+                <div class="text-emerald-700 flex justify-center">{{ session('message') }}</div>
+            @endif
             @if ($sectiondata != null)
                 <div class="mb-4">
                     <div class="mb-2 flex justify-start md:justify-center items-center flex-col">
@@ -12,8 +15,7 @@
                             <span class="text-indigo-900">Touch</span>
                         </h1>
 
-                        <p
-                            class="mx-auto max-w-3xl text-base sm:text-md md:text-xl text-center text-white ">
+                        <p class="mx-auto max-w-3xl text-base sm:text-md md:text-xl text-center text-gray-800 ">
 
                             {!! $sectiondata->description !!}
                         </p>
@@ -22,11 +24,7 @@
                 <div class="flex items-stretch justify-center">
                     <div class="grid gap-8 md:grid-cols-2">
                         <div class="h-full pr-6 md:text-left text-center">
-                            <p
-                                class="mb-6 md:mb-10 md:ml-0 ml-2 text-base sm:text-md text-gray-600 dark:text-slate-400 text-center md:text-left">
-                                <!-- We are located at The Hazina Towers 5th floor Wing A Monrovia
-                                street, Utalii lane.. -->
-                            </p>
+
                             <ul class="mb-3 md:mb-0 md:ml-0 ml-5 ">
                                 <li class="flex mb-4 md:mb-6 lg:mb-10">
                                     <div
@@ -41,10 +39,10 @@
                                         </svg>
                                     </div>
                                     <div class="ml-4 mt-2">
-                                        <h5 class="mb-1 text-md font-medium leading-6 text-white">
+                                        <h5 class="mb-1 text-md font-medium leading-6 text-gray-800">
                                             {{ $sectiondata->address_title }}
                                         </h5>
-                                        <p class="text-sm sm:text-base text-white">
+                                        <p class="text-sm sm:text-base text-gray-800">
                                             {{ $sectiondata->address_subtitle }}
                                         </p>
                                     </div>
@@ -63,10 +61,10 @@
                                         </svg>
                                     </div>
                                     <div class="ml-4 mt-2">
-                                        <h5 class="mb-1 text-md font-medium leading-6 text-white">
+                                        <h5 class="mb-1 text-md font-medium leading-6 text-gray-800">
                                             {{ $sectiondata->contact_title }}
                                         </h5>
-                                        <p class="text-sm sm:text-base text-white">
+                                        <p class="text-sm sm:text-base text-gray-800">
                                             {{ $sectiondata->contact_subtitle }}
                                         </p>
                                     </div>
@@ -82,10 +80,10 @@
                                         </svg>
                                     </div>
                                     <div class="ml-4 mt-2">
-                                        <h5 class="mb-1 text-md font-medium leading-6 text-white">
+                                        <h5 class="mb-1 text-md font-medium leading-6 text-gray-800">
                                             {{ $sectiondata->hour_title }}
                                         </h5>
-                                        <p class="text-sm sm:text-base text-white">
+                                        <p class="text-sm sm:text-base text-gray-800">
                                             {{ $sectiondata->hour_subtitle }}
                                         </p>
                                     </div>
@@ -93,37 +91,49 @@
                             </ul>
                         </div>
                         <div class="card h-fit max-w-6xl p-5 md:p-8" id="form">
-                            <h2 class="mb-4 text-2xl font-bold text-white">
+                            <h2 class="mb-4 text-2xl font-bold text-gray-800">
                                 {{ $sectiondata->form_title }}
                             </h2>
-                            <form method="POST" action="views.add_message">
+
+
+                            <form method="POST" wire:submit.prevent="addMessage">
                                 <div class="mb-6">
-                                    <div class="mx-0 mb-1 sm:mb-4">
-                                        <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label>
-                                        <input type="text" id="name" autocomplete="given-name"
-                                            placeholder="Your name"
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                                            name="name" />
+                                    <div class="mx-0 mb-4">
+                                        {{-- <label for="name"
+                                            class="pb-1 text-xs uppercase tracking-wider text-gray-800">Name</label> --}}
+                                        <input type="text" id="name" wire:model="name" placeholder="Your name"
+                                            class="w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300" />
+                                        @error('name')
+                                            <span class="text-red-500  flex justify-center">{{ $message }}</span>
+                                        @enderror
                                     </div>
-                                    <div class="mx-0 mb-1 sm:mb-4">
-                                        <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label>
-                                        <input type="email" id="email" autocomplete="email"
+
+                                    <div class="mx-0 mb-4">
+                                        {{-- <label for="email"
+                                            class="pb-1 text-xs uppercase tracking-wider text-gray-800">Email</label> --}}
+                                        <input type="email" id="email" wire:model="email"
                                             placeholder="Your email address"
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                                            name="email" />
+                                            class="w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300" />
+                                        @error('email')
+                                            <span class="text-red-500 flex justify-center">{{ $message }}</span>
+                                        @enderror
                                     </div>
-                                    <div class="mx-0 mb-1 sm:mb-2">
-                                        <label for="texts" class="pb-1 text-xs uppercase tracking-wider"></label>
-                                        <textarea id="texts" name="texts" cols="30" rows="4" placeholder="Write your message..."
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+
+                                    <div class="mx-0 mb-4">
+                                        {{-- <label for="texts"
+                                            class="pb-1 text-xs uppercase tracking-wider text-gray-800">Message</label> --}}
+                                        <textarea id="texts" wire:model="texts" placeholder="Write your message..."
+                                            class="w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-gray-700"></textarea>
+                                        @error('texts')
+                                            <span class="text-red-500 flex justify-center">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
 
                                 <button type="submit"
-                                    class="w-full bg-[#995500] hover:bg-gray-400 hover:text-gray-600 text-white px-6 py-3 font-xl rounded-md sm:mb-0 sm:px-4 sm:py-2">
-                                    {{ $sectiondata->button_text }}
+                                    class="w-full bg-[#995500] hover:bg-yellow-600 hover:text-blue-100 text-white px-6 py-3 font-xl rounded-md">
+                                    Send Message
                                 </button>
-
                             </form>
                         </div>
                     </div>

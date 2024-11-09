@@ -13,17 +13,17 @@ return new class extends Migration
     {
         Schema::create('contact_us_sections', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
-            $table->string('description')->nullable();
-            $table->string('button_text')->nullable();
-            $table->string('hour_title')->nullable();
-            $table->string('hour_subtitle')->nullable();
-            $table->string('address_title')->nullable();
-            $table->string('address_subtitle')->nullable();
-            $table->string('contact_title')->nullable();
-            $table->string('contact_subtitle')->nullable();
-            $table->string('form_title')->nullable();
-            $table->foreignId('page_section_id')->nullable()->constrained();
+            $table->string('title');
+            $table->string('description');
+            $table->string('button_text');
+            $table->string('hour_title');
+            $table->string('hour_subtitle');
+            $table->string('address_title');
+            $table->string('address_subtitle');
+            $table->string('contact_title');
+            $table->string('contact_subtitle');
+            $table->string('form_title');
+            $table->foreignId('page_section_id')->constrained();
             $table->timestamps();
         });
     }

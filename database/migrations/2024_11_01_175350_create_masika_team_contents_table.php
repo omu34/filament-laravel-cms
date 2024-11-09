@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('masika_team_contents', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('title');
+            $table->string('email');
+            $table->string('image');
+            $table->foreignId('page_section_id')->constrained();
             $table->timestamps();
         });
     }

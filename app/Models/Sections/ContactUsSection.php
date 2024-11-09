@@ -9,7 +9,8 @@ use App\Models\Pages\PageSection;
 class ContactUsSection extends Model
 {
     use HasFactory;
-    protected $fillable = [
+    protected $fillable =
+    [
         'title',
         'description',
         'hour_title',
@@ -20,9 +21,8 @@ class ContactUsSection extends Model
         'contact_subtitle',
         'form_title',
         'button_text',
-        'page_section_id',
+        'page_section_id'
     ];
-
     public function pageSection()
     {
         return $this->belongsTo(PageSection::class);

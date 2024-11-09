@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Masika and Koross your best law firm.">
+    <meta name="keywords" content="Best law firm, Masika and koross, advocates,  law firm, law firm services">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/area-practice.css">
@@ -37,16 +40,8 @@
             </a>
         </div>
     </main>
-
-
-
     <x-app-footer />
-
     @livewireScripts
-
-
-
-
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -57,8 +52,6 @@
 <script src="./js/counter.js"></script>
 <script src="./js/newsletter.js"></script>
 <script src="./js/scroll-to-top.js"></script>
-
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     var swiper6 = new Swiper(".mySwiperSlides", {

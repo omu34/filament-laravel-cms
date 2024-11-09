@@ -85,16 +85,16 @@ class BannerSeeder extends Seeder
         Banner::create([
             'title' => 'Home Owning Case ',
             'description' => 'We will help you acquire your home',
-            'image' => '/public/images/procurement.jpg',
+            'image' => '/images/procurement.jpg',
             'button_text' => 'Explore',
             'button_url' => 'home',
             'page_section_id' => 1,
         ]);
 
         Banner::create([
-            'title' => 'Land Ownership Case',
+            'title' => 'Banking and Finance',
             'description' => 'We will help you acquire your land.',
-            'image' => 'https://mmsadvocates.co.ke/wp-content/uploads/2023/05/Real-Estate.jpg',
+            'image' => 'images/home-banner-min-webp.webp',
             'button_text' => 'Explore',
             'button_url' => 'environment',
             'page_section_id' => 1,
@@ -125,7 +125,7 @@ class BannerSeeder extends Seeder
             'image' => 'https://www.masikakoross.com/wp-content/uploads/2018/05/oie_LoZRjX2C0Svc.jpg',
             'button_text' => 'About Us',
             'button_url' => 'about',
-            'page_section_id' => 2,
+            'page_section_id' => 1,
         ]);
 
         Banner::create([
@@ -134,7 +134,7 @@ class BannerSeeder extends Seeder
             'image' => 'https://www.masikakoross.com/wp-content/uploads/2018/05/oie_YdLEhrPei1Va.jpg',
             'button_text' => 'About Us',
             'button_url' => 'about',
-            'page_section_id' => 3,
+            'page_section_id' => 1,
         ]);
 
         Banner::create([
@@ -143,7 +143,7 @@ class BannerSeeder extends Seeder
             'image' => 'images/procurement.jpg',
             'button_text' => 'About Us',
             'button_url' => 'about',
-            'page_section_id' => 4,
+            'page_section_id' => 1,
         ]);
 
         Banner::create([
@@ -152,7 +152,7 @@ class BannerSeeder extends Seeder
             'image' => 'https://mmsadvocates.co.ke/wp-content/uploads/2023/05/Real-Estate.jpg',
             'button_text' => 'About Us',
             'button_url' => 'about',
-            'page_section_id' => 5,
+            'page_section_id' => 1,
         ]);
 
         Banner::create([
@@ -161,7 +161,7 @@ class BannerSeeder extends Seeder
             'image' => 'https://mmsadvocates.co.ke/wp-content/uploads/2023/05/Dispute-Resolution.jpg',
             'button_text' => 'About Us',
             'button_url' => 'about',
-            'page_section_id' => 6,
+            'page_section_id' => 1,
         ]);
 
         Banner::create([
@@ -170,16 +170,16 @@ class BannerSeeder extends Seeder
             'image' => '/public/images/environment.jpg',
             'button_text' => 'About Us',
             'button_url' => 'about',
-            'page_section_id' => 7,
+            'page_section_id' => 1,
         ]);
 
         Banner::create([
             'title' => 'Our Diligent Team',
             'description' => 'You deserve the best Lawyers to Handle your cases.',
-            'image' => 'https://www.masikakoross.com/wp-content/uploads/2018/05/oie_LoZRjX2C0Svc.jpg',
+            'image' => '/public/images/m_team.jpg',
             'button_text' => 'About Us',
             'button_url' => 'about',
-            'page_section_id' => 8,
+            'page_section_id' => 1,
         ]);
 
         Banner::create([
@@ -225,55 +225,6 @@ class BannerSeeder extends Seeder
             'button_text' => 'About Us',
             'button_url' => 'about',
             'page_section_id' => 13,
-        ]);
-        Banner::create([
-            'title' => 'Banking and Finance law',
-            'description' => 'Get Our Legal Team with you we offer you great flexibility as you acquire assets.',
-            'image' => 'images/home-banner-min-webp.webp',
-            'page_section_id' => 1,
-        ]);
-
-
-        Banner::create([
-            'title' => 'Banking and Finance law',
-            'description' => 'Get Our Legal Team with you we offer you great flexibility as you acquire assets.',
-            'image' => 'images/home-banner-min-webp.webp',
-            'page_section_id' => 1,
-        ]);
-
-        Banner::create([
-            'title' => 'Asset Finance Application',
-            'description' => 'Get Asset Financing with us which offers you great flexibility as you acquire assets.',
-            'image' => 'images/faqs-banner-min-webp.webp',
-            'page_section_id' => 8,
-        ]);
-
-        Banner::create([
-            'title' => 'FAQs',
-            'description' => 'Frequently Asked Questions',
-            'image' => 'images/faqs-banner-min-webp.webp',
-            'page_section_id' => 11,
-        ]);
-
-        Banner::create([
-            'title' => 'Terms & Conditions',
-            'description' => 'Get Asset Financing with us which offers you great flexibility as you acquire assets.',
-            'image' => 'images/tnc-banner-min-webp.webp',
-            'page_section_id' => 13,
-        ]);
-
-        Banner::create([
-            'title' => 'Asset Finance',
-            'description' => 'Get Asset Financing with us which offers you great flexibility as you acquire assets.',
-            'image' => 'images/home-banner-min-webp.webp',
-            'page_section_id' => 1,
-        ]);
-
-        Banner::create([
-            'title' => 'Asset Finance',
-            'description' => 'Get Asset Financing with us which offers you great flexibility as you acquire assets.',
-            'image' => 'images/home-banner-min-webp.webp',
-            'page_section_id' => 1,
         ]);
     }
 }

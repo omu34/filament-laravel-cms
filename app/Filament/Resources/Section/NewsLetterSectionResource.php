@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class NewsLetterSectionResource extends Resource
 {
     protected static ?string $model = NewsLetterSection::class;
+    protected static ?string $navigationGroup = 'Section';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -63,6 +64,10 @@ class NewsLetterSectionResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->label('Bottom Line'),
+            Tables\Columns\TextColumn::make('created_at')
+                ->dateTime(),
+            Tables\Columns\TextColumn::make('updated_at')
+                ->dateTime(),
             ])
             ->filters([
                 //

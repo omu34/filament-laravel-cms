@@ -16,13 +16,15 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ContactUsSectionResource extends Resource
 {
     protected static ?string $model = ContactUsSection::class;
+    protected static ?string $navigationGroup = 'Section';
 
-    protected static ?string $navigationIcon = 'heroicon-o-newspaper';
+    protected static ?string $navigationIcon = 'heroicon-c-clipboard-document-list';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
+
                 Forms\Components\TextInput::make('title')
                     ->maxLength(255)
                     ->required()
@@ -60,13 +62,10 @@ class ContactUsSectionResource extends Resource
                     ->maxLength(255)
                     ->required()
                     ->label('Form Title'),
-
                 Forms\Components\TextInput::make('button_text')
                     ->maxLength(255)
                     ->required()
                     ->label('Button Text'),
-
-
             ]);
     }
 
@@ -115,6 +114,11 @@ class ContactUsSectionResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->label('Button Text'),
+            Tables\Columns\TextColumn::make('created_at')
+                ->dateTime(),
+            Tables\Columns\TextColumn::make('updated_at')
+                ->dateTime(),
+
             ])
             ->filters([
                 //
